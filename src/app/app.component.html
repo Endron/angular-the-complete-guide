@@ -1,8 +1,16 @@
-<p>
-  test {{ content }}
-</p>
+<div class="container">
+  <h1>{{appname}}</h1>
 
-<p>
-  <app-success-alert></app-success-alert>
-  <app-warnint-alert></app-warnint-alert>
-</p>
+  <div class="row">
+    test {{ content }}
+  </div>
+
+  <div class="row">
+    <div class="col-md">
+      <app-success-alert></app-success-alert>
+    </div>
+    <div class="col-md">
+      <app-warnint-alert></app-warnint-alert>
+    </div>
+  </div>
+</div>

@@ -6,5 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  appname = 'My Test App';
+
   content = 'my content changed';
 }
