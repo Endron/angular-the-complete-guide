@@ -5,13 +5,15 @@ import {AppComponent} from './app.component';
 import {WarningAlertComponent} from './warning-alert/warning-alert.component';
 import {SuccessAlertComponent} from './success-alert/success-alert.component';
 import {UsernameInputComponent} from './username-input/username-input.component';
+import { HiddenTextComponent } from './hidden-text/hidden-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    UsernameInputComponent
+    UsernameInputComponent,
+    HiddenTextComponent
   ],
   imports: [
     BrowserModule,
