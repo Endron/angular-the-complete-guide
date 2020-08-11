@@ -1,0 +1,23 @@
+<form>
+  <div class="form-group">
+    <label for="usernameInput">Username</label>
+    <input
+      id="usernameInput"
+      type="text"
+      class="form-control"
+      aria-describedby="usernameHelp"
+      [(ngModel)]="user.username"
+      name="username"
+    >
+    <small id="usernameHelp" class="form-text text-muted">Please insert your username here.</small>
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary"
+    (click)="onClearButtonClicked($event)"
+    [disabled]="user.username.length === 0"
+  >
+    Clear
+  </button>
+</form>
+<p>Your username is: "{{ user.username }}"</p>
